@@ -14,26 +14,30 @@
 
 <body>
 <!-- шапка сайта -->
-<header class="header border">
-<div class="container navigation">
-    <nav class="nav-list">
+<header class="header">
+<div class="container container-header">
+    <!-- <nav class="nav-list"> -->
         <a class="logo link" href="">Web<span class="logo-header">Studio</span></a>
-        <button type="button" class="btn-menu is-open" aria-expanded="false" data-btn-menu>
-            <svg  width="32" height="32" aria-label="mobile menu switch">
-                <use class="icon-menu js-close-menu" href="./images/icons.svg#icon-menu" ></use>
-                <use class="icon-cross js-open-menu" href="./images/icons.svg#icon-close-black-1" ></use>
+        <button class="btn-menu-open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="open menu button">
+            <svg class="icon-menu" width="32" height="32" aria-label="mobile menu switch">
+                <use  href="./images/icons.svg#icon-menu"></use>
             </svg>
 
         </button>
         <div class="menu-container js-menu-container" id="mobile-menu">
-             
+            <nav class="nav">
                 <ul class="nav-set">
-                    <li><a class="nav-item link " href="./index.html">Studio</a> </li>
+                    <li><a class="nav-item link current" href="./index.html">Studio</a> </li>
                     <li><a class="nav-item link" href="./portfolio.html">Portfolio</a> </li>
-                    <li><a class="nav-item link current" href="">Contacts</a> </li>
+                    <li><a class="nav-item link " href="">Contacts</a> </li>
                 </ul>
-        
-                <address class="nav-link-set">
+                <button type="button" class="btn-menu-close js-close-menu" aria-label="close menu button">
+                    <svg class="icon-cross" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black-1"></use>
+                    </svg>
+                </nav>
+                
+            <address class="nav-link-set">
                 <ul class="address-list">
                     <li>
                     <a class="address-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -44,15 +48,15 @@
                     </ul>
                 </address>
 
-                <ul class="socials-list-menu">
-                    <li class="socials-menu">
-                        <a class="social-link-menu" href="https://www.instagram.com/" aria-label="Instagram" target="_blank"
+            <ul class="socials-list-menu">
+                <li class="socials-menu">
+                    <a class="social-link-menu" href="https://www.instagram.com/" aria-label="Instagram" target="_blank"
                             rel="noopener noreferrer">
-                            <svg class="social-icons-menu" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
+                        <svg class="social-icons-menu" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                </li>
                     <li class="socials-menu">
                         <a class="social-link-menu" href="https://twitter.com/" aria-label="Twitter" target="_blank"
                             rel="noopener noreferrer">
